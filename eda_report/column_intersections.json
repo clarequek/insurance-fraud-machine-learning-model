@@ -1,0 +1,44 @@
+{
+  "Train \u2229 Beneficiary": [],
+  "Train \u2229 Inpatient": [
+    "Provider"
+  ],
+  "Train \u2229 Outpatient": [
+    "Provider"
+  ],
+  "Beneficiary \u2229 Inpatient": [
+    "BeneID"
+  ],
+  "Beneficiary \u2229 Outpatient": [
+    "BeneID"
+  ],
+  "Inpatient \u2229 Outpatient": [
+    "AttendingPhysician",
+    "BeneID",
+    "ClaimEndDt",
+    "ClaimID",
+    "ClaimStartDt",
+    "ClmAdmitDiagnosisCode",
+    "ClmDiagnosisCode_1",
+    "ClmDiagnosisCode_10",
+    "ClmDiagnosisCode_2",
+    "ClmDiagnosisCode_3",
+    "ClmDiagnosisCode_4",
+    "ClmDiagnosisCode_5",
+    "ClmDiagnosisCode_6",
+    "ClmDiagnosisCode_7",
+    "ClmDiagnosisCode_8",
+    "ClmDiagnosisCode_9",
+    "ClmProcedureCode_1",
+    "ClmProcedureCode_2",
+    "ClmProcedureCode_3",
+    "ClmProcedureCode_4",
+    "ClmProcedureCode_5",
+    "ClmProcedureCode_6",
+    "DeductibleAmtPaid",
+    "InscClaimAmtReimbursed",
+    "OperatingPhysician",
+    "OtherPhysician",
+    "Provider"
+  ]
+}

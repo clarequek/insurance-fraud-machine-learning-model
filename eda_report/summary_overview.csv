@@ -1,0 +1,5 @@
+dataset,rows,cols,sample_cols
+Train,5410,2,"Provider, PotentialFraud"
+Beneficiary,138556,25,"BeneID, DOB, DOD, Gender, Race, RenalDiseaseIndicator, State, County..."
+Inpatient,40474,30,"BeneID, ClaimID, ClaimStartDt, ClaimEndDt, Provider, InscClaimAmtReimbursed, AttendingPhysician, OperatingPhysician..."
+Outpatient,517737,27,"BeneID, ClaimID, ClaimStartDt, ClaimEndDt, Provider, InscClaimAmtReimbursed, AttendingPhysician, OperatingPhysician..."

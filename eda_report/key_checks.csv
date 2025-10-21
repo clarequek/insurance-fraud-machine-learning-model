@@ -1,0 +1,9 @@
+dataset,key,present,null_count,duplicate_count
+Train,BeneID,False,,
+Train,ClaimID,False,,
+Beneficiary,BeneID,True,0.0,0.0
+Beneficiary,ClaimID,False,,
+Inpatient,BeneID,True,0.0,9185.0
+Inpatient,ClaimID,True,0.0,0.0
+Outpatient,BeneID,True,0.0,383757.0
+Outpatient,ClaimID,True,0.0,0.0
