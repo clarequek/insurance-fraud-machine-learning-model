@@ -1,0 +1,7 @@
+.vscode/
+.venv/
+__pycache__/
+*.pyc
+catboost_info/
+data/*.csv
+models/*.pkl
