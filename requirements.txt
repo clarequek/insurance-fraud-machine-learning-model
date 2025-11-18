@@ -10,4 +10,4 @@ joblib
 openpyxl
 lightgbm
 catboost
-bayesian-optimization
+optuna
