@@ -1,0 +1,70 @@
+{
+  "training_data": {
+    "total_samples": 558211,
+    "n_features": 136,
+    "fraud_ratio": 0.3812106891480103,
+    "n_folds_cv": 5
+  },
+  "base_learners": {
+    "XGBoost": {
+      "mean_cv_roc_auc": 0.9826945421021058,
+      "cv_std": 0.00021941854141768513,
+      "overall_oof_roc_auc": 0.9826941636052329,
+      "overall_oof_pr_auc": 0.9724720921843888
+    },
+    "LightGBM": {
+      "mean_cv_roc_auc": 0.9834666207596812,
+      "cv_std": 0.0003514614596771972,
+      "overall_oof_roc_auc": 0.9834675781784621,
+      "overall_oof_pr_auc": 0.9742118942870862
+    },
+    "CatBoost": {
+      "mean_cv_roc_auc": 0.9750330225487215,
+      "cv_std": 0.0003101875940162757,
+      "overall_oof_roc_auc": 0.9750338236378946,
+      "overall_oof_pr_auc": 0.9612239887507272
+    },
+    "HistGradientBoosting": {
+      "mean_cv_roc_auc": 0.9712411817465292,
+      "cv_std": 0.0013919170162196171,
+      "overall_oof_roc_auc": 0.9712502478578053,
+      "overall_oof_pr_auc": 0.9563355901995474
+    },
+    "RandomForest": {
+      "mean_cv_roc_auc": 0.9944040990296277,
+      "cv_std": 0.0001489837290462683,
+      "overall_oof_roc_auc": 0.9944041949130813,
+      "overall_oof_pr_auc": 0.9915756489313483
+    },
+    "ExtraTrees": {
+      "mean_cv_roc_auc": 0.9864808201213655,
+      "cv_std": 0.0001928011249404229,
+      "overall_oof_roc_auc": 0.9864805508242545,
+      "overall_oof_pr_auc": 0.980523806506129
+    }
+  },
+  "meta_learner": {
+    "training_roc_auc": 0.9954271891753806,
+    "training_pr_auc": 0.9932727113436698,
+    "training_accuracy": 0.9704359104353013,
+    "training_precision": 0.96472420960922,
+    "training_recall": 0.9574569070847196,
+    "training_f1": 0.9610768203892082
+  },
+  "test_predictions": {
+    "n_samples": 135392,
+    "mean_probability": 0.0012280766238270163,
+    "std_probability": 0.015847645697644682,
+    "min_probability": 9.28897311642649e-05,
+    "max_probability": 0.9418172518211277,
+    "median_probability": 0.00020357168084444966
+  },
+  "feature_importance": {
+    "XGBoost": 1421.0,
+    "LightGBM": 1495.0,
+    "CatBoost": 1231.0,
+    "HistGradientBoosting": 1306.0,
+    "RandomForest": 1851.0,
+    "ExtraTrees": 2071.0
+  }
+}

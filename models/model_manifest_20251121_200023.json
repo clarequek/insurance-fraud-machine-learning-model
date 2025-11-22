@@ -1,0 +1,60 @@
+{
+  "export_timestamp": "20251121_200023",
+  "export_date": "2025-11-21 20:00:38",
+  "model_version": "1.0.0",
+  "description": "Healthcare Insurance Fraud Detection - Stacked Ensemble Model",
+  "files": {
+    "base_learners": {
+      "XGBoost": "models/xgboost_base_learner_20251121_200023.pkl",
+      "LightGBM": "models/lightgbm_base_learner_20251121_200023.pkl",
+      "CatBoost": "models/catboost_base_learner_20251121_200023.pkl",
+      "HistGradientBoosting": "models/histgradientboosting_base_learner_20251121_200023.pkl",
+      "RandomForest": "models/randomforest_base_learner_20251121_200023.pkl",
+      "ExtraTrees": "models/extratrees_base_learner_20251121_200023.pkl"
+    },
+    "meta_learner": "models/meta_learner_lightgbm_20251121_200023.pkl",
+    "scaler": "models/feature_scaler_20251121_200023.pkl",
+    "features": "models/selected_features_20251121_200023.json",
+    "hyperparameters": "models/model_hyperparameters_20251121_200023.json",
+    "performance_metrics": "models/model_performance_metrics_20251121_200023.json",
+    "test_predictions": "models/test_predictions_20251121_200023.csv",
+    "detailed_predictions": "models/test_predictions_detailed_20251121_200023.csv"
+  },
+  "model_architecture": {
+    "type": "Stacked Ensemble",
+    "base_learners": [
+      "XGBoost",
+      "LightGBM",
+      "CatBoost",
+      "HistGradientBoosting",
+      "RandomForest",
+      "ExtraTrees"
+    ],
+    "meta_learner": "LightGBM",
+    "n_features": 136,
+    "n_base_models": 6,
+    "cv_folds": 5
+  },
+  "training_summary": {
+    "total_training_samples": 558211,
+    "fraud_samples": 212796,
+    "non_fraud_samples": 345415,
+    "fraud_ratio": 0.3812106891480103,
+    "meta_learner_training_roc_auc": 0.9954271891753806,
+    "meta_learner_training_pr_auc": 0.9932727113436698
+  },
+  "usage_instructions": {
+    "loading_models": "Use joblib.load() to load .pkl files",
+    "feature_order": "Features must be in the exact order specified in selected_features.json",
+    "scaling": "Continuous features must be scaled using the saved StandardScaler",
+    "prediction_pipeline": [
+      "1. Load base learners and meta-learner",
+      "2. Load feature scaler and configuration",
+      "3. Engineer features following the same pipeline",
+      "4. Scale continuous features using saved scaler",
+      "5. Generate predictions from all base learners",
+      "6. Combine base predictions using meta-learner",
+      "7. Output final fraud probabilities"
+    ]
+  }
+}

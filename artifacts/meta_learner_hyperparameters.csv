@@ -1,0 +1,9 @@
+Model,Parameter,Value,Data_Type
+Meta-Learner (LightGBM),num_leaves,26.0,int
+Meta-Learner (LightGBM),learning_rate,0.039531665741191886,float
+Meta-Learner (LightGBM),n_estimators,375.0,int
+Meta-Learner (LightGBM),subsample,0.7408443861940184,float
+Meta-Learner (LightGBM),colsample_bytree,0.5643149980822127,float
+Meta-Learner (LightGBM),min_child_samples,7.0,int
+Meta-Learner (LightGBM),reg_lambda,4.355510815514592,float
+Meta-Learner (LightGBM),reg_alpha,1.7171775219713408,float

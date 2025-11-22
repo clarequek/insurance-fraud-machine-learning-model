@@ -1,0 +1,66 @@
+{
+  "base_learners": {
+    "XGBoost": {
+      "max_depth": 10,
+      "learning_rate": 0.15149474989073744,
+      "n_estimators": 950,
+      "subsample": 0.9837449202633133,
+      "colsample_bytree": 0.9687855964604112,
+      "min_child_weight": 1,
+      "gamma": 0.02814941578475838,
+      "reg_lambda": 2.658057836786773,
+      "reg_alpha": 0.9034293188414783,
+      "scale_pos_weight": 16.561958728737206
+    },
+    "LightGBM": {
+      "num_leaves": 131,
+      "learning_rate": 0.15289754828681476,
+      "n_estimators": 850,
+      "subsample": 0.8925678643036971,
+      "colsample_bytree": 0.9588639467917393,
+      "min_child_samples": 10,
+      "reg_lambda": 0.05284398817916424,
+      "reg_alpha": 0.3836790936017326
+    },
+    "CatBoost": {
+      "depth": 9,
+      "learning_rate": 0.29275952251191856,
+      "iterations": 950,
+      "subsample": 0.8170821658655648,
+      "colsample_bylevel": 0.9804330513392362,
+      "min_data_in_leaf": 94,
+      "l2_leaf_reg": 2.50513559059101
+    },
+    "HistGradientBoosting": {
+      "learning_rate": 0.24937991169021478,
+      "max_depth": 14,
+      "max_iter": 400,
+      "min_samples_leaf": 69,
+      "l2_regularization": 0.16912777350174657
+    },
+    "RandomForest": {
+      "n_estimators": 450,
+      "max_depth": 30,
+      "max_features": null,
+      "min_samples_split": 5,
+      "min_samples_leaf": 3
+    },
+    "ExtraTrees": {
+      "n_estimators": 150,
+      "max_depth": 30,
+      "max_features": null,
+      "min_samples_split": 8,
+      "min_samples_leaf": 2
+    }
+  },
+  "meta_learner": {
+    "num_leaves": 26,
+    "learning_rate": 0.039531665741191886,
+    "n_estimators": 375,
+    "subsample": 0.7408443861940184,
+    "colsample_bytree": 0.5643149980822127,
+    "min_child_samples": 7,
+    "reg_lambda": 4.355510815514592,
+    "reg_alpha": 1.7171775219713408
+  }
+}
