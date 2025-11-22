@@ -427,6 +427,6 @@ We also acknowledge:
 For questions or collaborations, please contact:
 - Clare Quek: [e1156061@u.nus.edu](mailto:e1156061@u.nus.edu)
 - Eunice Gong: [e1155847@u.nus.edu](mailto:e1155847@u.nus.edu)
-- Ow Zheng We: [e1122416@u.nus.edu]((mailto:e1122416@u.nus.edu))
+- Ow Zheng Wei: [e1122416@u.nus.edu](mailto:e1122416@u.nus.edu)
 
 ---
