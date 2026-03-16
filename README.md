@@ -392,7 +392,7 @@ Results are automatically saved to:
 
 - **Quek Ying Han Clare**
 - **Eunice Gong Shi Min** 
-- **[Ow Zheng Wei]** 
+- **Ow Zheng Wei** 
 
 **Course:** BT4012 - Fraud Analytics  
 **Institution:** National University of Singapore  
